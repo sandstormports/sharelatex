@@ -50,17 +50,17 @@ module.exports =
 
 	redis:
 		web:
-			host: "localhost"
+			host: "127.0.0.1"
 			port: "6379"
 			password: ""
 
 		api:
-			host: "localhost"
+			host: "127.0.0.1"
 			port: "6379"
 			password: ""
 
 		fairy:
-			host: "localhost"
+			host: "127.0.0.1"
 			port: "6379"
 			password: ""
 
@@ -81,51 +81,51 @@ module.exports =
 	internal:
 		web:
 			port: webPort = 2999
-			host: "localhost"
+			host: "127.0.0.1"
 		documentupdater:
 			port: docUpdaterPort = 3003
-			host: "localhost"
+			host: "127.0.0.1"
 		clsi:
 			port: clsiPort = 3013
-			host: "localhost"
+			host: "127.0.0.1"
 		filestore:
 			port: filestorePort = 3009
-			host: "localhost"
+			host: "127.0.0.1"
 		trackchanges:
 			port: trackchangesPort = 3015
-			host: "localhost"
+			host: "127.0.0.1"
 		docstore:
 			port: docstorePort = 3016
-			host: "localhost"
+			host: "127.0.0.1"
 
 	# Tell each service where to find the other services. If everything
 	# is running locally then this is easy, but they exist as separate config
 	# options incase you want to run some services on remote hosts.
 	apis:
 		web:
-			url: "http://localhost:#{webPort}"
+			url: "http://127.0.0.1:#{webPort}"
 			user: httpAuthUser
 			pass: httpAuthPass
 		documentupdater:
-			url : "http://localhost:#{docUpdaterPort}"
+			url : "http://127.0.0.1:#{docUpdaterPort}"
 		clsi:
-			url: "http://localhost:#{clsiPort}"
+			url: "http://127.0.0.1:#{clsiPort}"
 		filestore:
-			url: "http://localhost:#{filestorePort}"
+			url: "http://127.0.0.1:#{filestorePort}"
 		trackchanges:
-			url: "http://localhost:#{trackchangesPort}"
+			url: "http://127.0.0.1:#{trackchangesPort}"
 		docstore:
-			url: "http://localhost:#{docstorePort}"
+			url: "http://127.0.0.1:#{docstorePort}"
 		thirdPartyDataStore:
-			url : "http://localhost:3002"
+			url : "http://127.0.0.1:3002"
 			emptyProjectFlushDelayMiliseconds: 5 * seconds
 		tags:
-			url :"http://localhost:3012"
+			url :"http://127.0.0.1:3012"
 		spelling:
-			url : "http://localhost:3005"
+			url : "http://127.0.0.1:3005"
 		versioning:
 			snapshotwaitms:3000
-			url: "http://localhost:4000"
+			url: "http://127.0.0.1:4000"
 			username: httpAuthUser
 			password: httpAuthPass
 		recurly:
@@ -133,17 +133,17 @@ module.exports =
 			apiKey: ""
 			subdomain: ""
 		chat:
-			url: "http://localhost:3010"
+			url: "http://127.0.0.1:3010"
 		templates:
 			port: 3007
 		blog:
 			port: 3008
 		templates_api:
-			url: "http://localhost:3007"
+			url: "http://127.0.0.1:3007"
 
 	# Where your instance of ShareLaTeX can be found publically. Used in emails
 	# that are sent out, generated links, etc.
-	siteUrl : 'http://localhost:3000'
+	siteUrl : 'http://127.0.0.1:3000'
 
 	# Same, but with http auth credentials.
 	httpAuthSiteUrl: 'http://#{httpAuthUser}:#{httpAuthPass}@localhost:3000'
