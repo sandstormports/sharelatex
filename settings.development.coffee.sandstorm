@@ -246,6 +246,7 @@ module.exports =
 		compilesDir:  Path.resolve("/var/compiles")
 		# Where to cache downloaded URLs for the CLSI
 		clsiCacheDir: Path.resolve("/var/cache")
+		uploadFolder: Path.resolve("/var/uploads")
 	
 	# Automatic Snapshots
 	# -------------------
