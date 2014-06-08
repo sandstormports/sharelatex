@@ -8,7 +8,8 @@ knox = require "knox"
 
 SERVICES = [{
 	name: "web"
-	repo: "https://github.com/sharelatex/web-sharelatex.git"
+	repo: "https://github.com/dwrensha/web-sharelatex.git"
+	branch: "sandstorm-app"
 }, {
 	name: "document-updater"
 	repo: "https://github.com/sharelatex/document-updater-sharelatex.git"
@@ -75,7 +76,7 @@ module.exports = (grunt) ->
 		do (service) ->
 			grunt.registerTask "install:#{service.name}", "Download and set up the #{service.name} service", () ->
 				done = @async()
-				Helpers.installService(service.repo, service.name, done)
+				Helpers.installService(service, done)
 			grunt.registerTask "update:#{service.name}", "Checkout and update the #{service.name} service", () ->
 				done = @async()
 				Helpers.updateService(service.name, done)
@@ -115,12 +116,12 @@ module.exports = (grunt) ->
 		Helpers.buildDeb @async()
 
 	Helpers =
-		installService: (repo_src, dir, callback = (error) ->) ->
-			Helpers.cloneGitRepo repo_src, dir, (error) ->
+		installService: (service, callback = (error) ->) ->
+			Helpers.cloneGitRepo service, (error) ->
 				return callback(error) if error?
-				Helpers.installNpmModules dir, (error) ->
+				Helpers.installNpmModules service.name, (error) ->
 					return callback(error) if error?
-					Helpers.runGruntInstall dir, (error) ->
+					Helpers.runGruntInstall service.name, (error) ->
 						return callback(error) if error?
 						callback()
 
@@ -133,9 +134,14 @@ module.exports = (grunt) ->
 						return callback(error) if error?
 						callback()
 
-		cloneGitRepo: (repo_src, dir, callback = (error) ->) ->
+		cloneGitRepo: (service, callback = (error) ->) ->
+			repo_src = service.repo
+			dir = service.name
+			branch = service.branch
+			if !branch
+			       branch = "master"
 			if !fs.existsSync(dir)
-				proc = spawn "git", ["clone", repo_src, dir], stdio: "inherit"
+				proc = spawn "git", ["clone", "-b", branch, repo_src, dir], stdio: "inherit"
 				proc.on "close", () ->
 					callback()
 			else
