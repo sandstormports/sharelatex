@@ -15,7 +15,8 @@ SERVICES = [{
 	repo: "https://github.com/sharelatex/document-updater-sharelatex.git"
 }, {
 	name: "clsi"
-	repo: "https://github.com/sharelatex/clsi-sharelatex.git"
+	repo: "https://github.com/dwrensha/clsi-sharelatex.git"
+	branch: "sandstorm-app"
 }, {
 	name: "filestore"
 	repo: "https://github.com/sharelatex/filestore-sharelatex.git"
