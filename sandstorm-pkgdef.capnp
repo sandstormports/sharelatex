@@ -41,8 +41,8 @@ const pkgdef :Spk.PackageDefinition = (
     # automatically by running it on a FUSE filesystem. So, the mappings
     # here are only to tell it where to find files that the app wants.
     searchPath = [
-      ( sourcePath = "/home/david/appdev/sharelatex"),
       ( sourcePath = "." ),  # Search this directory first.
+      ( sourcePath="/usr/bin/niscud",  packagePath="usr/bin/mongod"),
       ( sourcePath = "/",    # Then search the system root directory.
         hidePaths = [ "home", "proc", "sys" ]
         # You probably don't want the app pulling files from these places,
@@ -50,7 +50,6 @@ const pkgdef :Spk.PackageDefinition = (
         # hidden because Sandstorm itself provides them.
       )
     ]
-
     
   ),
 
