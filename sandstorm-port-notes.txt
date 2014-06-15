@@ -1,0 +1,14 @@
+To prevent sharelatex from rebuilding files such as pdflatex.fmt on every compile,
+I did this before running `spk pack`:
+
+$ cp -r /etc/texmf etc
+
+I changed a line in etc/texmf/web2c/texmf.cnf:
+
+-TEXMFSYSVAR = /var/lib/texmf
++TEXMFSYSVAR = /usr/local/lib/texmf
+
+Then I copied:
+
+$ mkdir -p usr/local/lib
+$ cp -r /var/lib/texmf usr/local/lib
