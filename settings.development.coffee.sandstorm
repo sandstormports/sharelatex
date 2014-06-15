@@ -225,7 +225,7 @@ module.exports =
 	# Should javascript assets be served minified or not. Note that you will
 	# need to run `grunt compile:minify` within the web-sharelatex directory
 	# to generate these.
-	useMinifiedJs: false
+	useMinifiedJs: true
 
 	# Should static assets be sent with a header to tell the browser to cache
 	# them.
