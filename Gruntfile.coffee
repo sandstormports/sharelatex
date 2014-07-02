@@ -31,7 +31,7 @@ SERVICES = [{
 }, {
 	name: "docstore"
 	repo: "https://github.com/sharelatex/docstore-sharelatex.git"
-	launch: true
+	launch: false
 }]
 
 module.exports = (grunt) ->

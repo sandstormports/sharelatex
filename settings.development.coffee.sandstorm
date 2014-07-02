@@ -115,7 +115,7 @@ module.exports =
 		trackchanges:
 			url: "http://127.0.0.1:#{trackchangesPort}"
 		docstore:
-			url: "http://127.0.0.1:#{docstorePort}"
+			url: "http://127.0.0.1:#{webPort}/docstore"
 		thirdPartyDataStore:
 			url : "http://127.0.0.1:3002"
 			emptyProjectFlushDelayMiliseconds: 5 * seconds
