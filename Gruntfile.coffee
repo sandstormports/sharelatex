@@ -10,22 +10,28 @@ SERVICES = [{
 	name: "web"
 	repo: "https://github.com/dwrensha/web-sharelatex.git"
 	branch: "sandstorm-app"
+	launch: true
 }, {
 	name: "document-updater"
 	repo: "https://github.com/sharelatex/document-updater-sharelatex.git"
+	launch: true
 }, {
 	name: "clsi"
 	repo: "https://github.com/dwrensha/clsi-sharelatex.git"
 	branch: "sandstorm-app"
+	launch: true
 }, {
 	name: "filestore"
 	repo: "https://github.com/sharelatex/filestore-sharelatex.git"
+	launch: false
 }, {
 	name: "track-changes"
 	repo: "https://github.com/sharelatex/track-changes-sharelatex.git"
+	launch: true
 }, {
 	name: "docstore"
 	repo: "https://github.com/sharelatex/docstore-sharelatex.git"
+	launch: true
 }]
 
 module.exports = (grunt) ->
@@ -44,7 +50,7 @@ module.exports = (grunt) ->
 
 		concurrent:
 			all:
-				tasks: ("run:#{service.name}" for service in SERVICES)
+				tasks: ("run:#{service.name}" for service in (SERVICES.filter (s) -> s.launch))
 				options:
 					limit: SERVICES.length
 					logConcurrentOutput: true

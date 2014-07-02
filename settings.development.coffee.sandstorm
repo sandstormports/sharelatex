@@ -111,7 +111,7 @@ module.exports =
 		clsi:
 			url: "http://127.0.0.1:#{clsiPort}"
 		filestore:
-			url: "http://127.0.0.1:#{filestorePort}"
+			url: "http://127.0.0.1:#{webPort}/filestore"
 		trackchanges:
 			url: "http://127.0.0.1:#{trackchangesPort}"
 		docstore:
