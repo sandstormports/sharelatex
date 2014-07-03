@@ -109,7 +109,7 @@ module.exports =
 		documentupdater:
 			url : "http://127.0.0.1:#{docUpdaterPort}"
 		clsi:
-			url: "http://127.0.0.1:#{clsiPort}"
+			url: "http://127.0.0.1:#{webPort}/clsi"
 		filestore:
 			url: "http://127.0.0.1:#{webPort}/filestore"
 		trackchanges:

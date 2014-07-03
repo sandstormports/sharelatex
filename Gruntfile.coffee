@@ -19,7 +19,7 @@ SERVICES = [{
 	name: "clsi"
 	repo: "https://github.com/dwrensha/clsi-sharelatex.git"
 	branch: "sandstorm-app"
-	launch: true
+	launch: false
 }, {
 	name: "filestore"
 	repo: "https://github.com/sharelatex/filestore-sharelatex.git"
