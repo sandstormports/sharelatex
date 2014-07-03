@@ -19,5 +19,12 @@ redis-server /etc/redis.conf &
 
 echo "started redis"
 
-grunt run
+node document-updater/app.js &
+
+echo "started document updater"
+
+node web/app.js
+
+
+
 
