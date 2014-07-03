@@ -113,7 +113,7 @@ module.exports =
 		filestore:
 			url: "http://127.0.0.1:#{webPort}/filestore"
 		trackchanges:
-			url: "http://127.0.0.1:#{trackchangesPort}"
+			url: "http://127.0.0.1:#{webPort}/trackchanges"
 		docstore:
 			url: "http://127.0.0.1:#{webPort}/docstore"
 		thirdPartyDataStore:

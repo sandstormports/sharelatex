@@ -27,7 +27,7 @@ SERVICES = [{
 }, {
 	name: "track-changes"
 	repo: "https://github.com/sharelatex/track-changes-sharelatex.git"
-	launch: true
+	launch: false
 }, {
 	name: "docstore"
 	repo: "https://github.com/sharelatex/docstore-sharelatex.git"
