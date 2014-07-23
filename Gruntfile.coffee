@@ -13,7 +13,8 @@ SERVICES = [{
 	launch: true
 }, {
 	name: "document-updater"
-	repo: "https://github.com/sharelatex/document-updater-sharelatex.git"
+	repo: "https://github.com/dwrensha/document-updater-sharelatex.git"
+	branch: "sandstorm-app"
 	launch: true
 }, {
 	name: "clsi"
@@ -22,15 +23,18 @@ SERVICES = [{
 	launch: false
 }, {
 	name: "filestore"
-	repo: "https://github.com/sharelatex/filestore-sharelatex.git"
+	repo: "https://github.com/dwrensha/filestore-sharelatex.git"
+	branch: "sandstorm-app"
 	launch: false
 }, {
 	name: "track-changes"
-	repo: "https://github.com/sharelatex/track-changes-sharelatex.git"
+	repo: "https://github.com/dwrensha/track-changes-sharelatex.git"
+	branch: "sandstorm-app"
 	launch: true
 }, {
 	name: "docstore"
-	repo: "https://github.com/sharelatex/docstore-sharelatex.git"
+	repo: "https://github.com/dwrensha/docstore-sharelatex.git"
+	branch: "sandstorm-app"
 	launch: false
 }]
 
