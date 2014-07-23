@@ -83,20 +83,20 @@ module.exports =
 			port: webPort = 2999
 			host: "127.0.0.1"
 		documentupdater:
-			port: docUpdaterPort = 3003
-			host: "127.0.0.1"
+			port: docUpdaterPort = 2999
+			host: "documentupdater.localhost"
 		clsi:
-			port: clsiPort = 3013
-			host: "127.0.0.1"
+			port: clsiPort = 2999
+			host: "clsi.localhost"
 		filestore:
-			port: filestorePort = 3009
-			host: "127.0.0.1"
+			port: filestorePort = 2999
+			host: "filestore.localhost"
 		trackchanges:
-			port: trackchangesPort = 3015
-			host: "127.0.0.1"
+			port: trackchangesPort = 2999
+			host: "trackchanges.localhost"
 		docstore:
-			port: docstorePort = 3016
-			host: "127.0.0.1"
+			port: docstorePort = 2999
+			host: "docstore.localhost"
 
 	# Tell each service where to find the other services. If everything
 	# is running locally then this is easy, but they exist as separate config
@@ -107,15 +107,15 @@ module.exports =
 			user: httpAuthUser
 			pass: httpAuthPass
 		documentupdater:
-			url : "http://127.0.0.1:#{docUpdaterPort}"
+			url : "http://documentupdater.localhost:#{docUpdaterPort}"
 		clsi:
-			url: "http://127.0.0.1:#{clsiPort}"
+			url: "http://clsi.localhost:#{clsiPort}"
 		filestore:
-			url: "http://127.0.0.1:#{filestorePort}"
+			url: "http://filestore.localhost:#{filestorePort}"
 		trackchanges:
-			url: "http://127.0.0.1:#{trackchangesPort}"
+			url: "http://trackchanges.localhost:#{trackchangesPort}"
 		docstore:
-			url: "http://127.0.0.1:#{docstorePort}"
+			url: "http://docstore.localhost:#{docstorePort}"
 		thirdPartyDataStore:
 			url : "http://127.0.0.1:3002"
 			emptyProjectFlushDelayMiliseconds: 5 * seconds

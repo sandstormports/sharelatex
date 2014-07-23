@@ -1,0 +1,12 @@
+#
+# /etc/hosts: static lookup table for host names
+#
+
+#<ip-address>	<hostname.domain.org>	<hostname>
+127.0.0.1	localhost.localdomain  localhost
+127.0.0.1   clsi.localhost
+127.0.0.1   filestore.localhost
+127.0.0.1   docstore.localhost
+127.0.0.1   trackchanges.localhost
+127.0.0.1   documentupdater.localhost
+

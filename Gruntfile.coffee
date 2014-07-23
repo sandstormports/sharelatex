@@ -19,11 +19,11 @@ SERVICES = [{
 	name: "clsi"
 	repo: "https://github.com/dwrensha/clsi-sharelatex.git"
 	branch: "sandstorm-app"
-	launch: true
+	launch: false
 }, {
 	name: "filestore"
 	repo: "https://github.com/sharelatex/filestore-sharelatex.git"
-	launch: true
+	launch: false
 }, {
 	name: "track-changes"
 	repo: "https://github.com/sharelatex/track-changes-sharelatex.git"
@@ -31,7 +31,7 @@ SERVICES = [{
 }, {
 	name: "docstore"
 	repo: "https://github.com/sharelatex/docstore-sharelatex.git"
-	launch: true
+	launch: false
 }]
 
 module.exports = (grunt) ->
