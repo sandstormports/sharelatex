@@ -23,7 +23,7 @@ node document-updater/app.js &
 
 echo "started document updater"
 
-node web/app.js
+grunt run
 
 
 

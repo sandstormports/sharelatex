@@ -14,24 +14,24 @@ SERVICES = [{
 }, {
 	name: "document-updater"
 	repo: "https://github.com/sharelatex/document-updater-sharelatex.git"
-	launch: false
+	launch: true
 }, {
 	name: "clsi"
 	repo: "https://github.com/dwrensha/clsi-sharelatex.git"
 	branch: "sandstorm-app"
-	launch: false
+	launch: true
 }, {
 	name: "filestore"
 	repo: "https://github.com/sharelatex/filestore-sharelatex.git"
-	launch: false
+	launch: true
 }, {
 	name: "track-changes"
 	repo: "https://github.com/sharelatex/track-changes-sharelatex.git"
-	launch: false
+	launch: true
 }, {
 	name: "docstore"
 	repo: "https://github.com/sharelatex/docstore-sharelatex.git"
-	launch: false
+	launch: true
 }]
 
 module.exports = (grunt) ->

@@ -109,13 +109,13 @@ module.exports =
 		documentupdater:
 			url : "http://127.0.0.1:#{docUpdaterPort}"
 		clsi:
-			url: "http://127.0.0.1:#{webPort}"
+			url: "http://127.0.0.1:#{clsiPort}"
 		filestore:
-			url: "http://127.0.0.1:#{webPort}/filestore"
+			url: "http://127.0.0.1:#{filestorePort}"
 		trackchanges:
-			url: "http://127.0.0.1:#{webPort}/trackchanges"
+			url: "http://127.0.0.1:#{trackchangesPort}"
 		docstore:
-			url: "http://127.0.0.1:#{webPort}/docstore"
+			url: "http://127.0.0.1:#{docstorePort}"
 		thirdPartyDataStore:
 			url : "http://127.0.0.1:3002"
 			emptyProjectFlushDelayMiliseconds: 5 * seconds
