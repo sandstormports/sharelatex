@@ -17,7 +17,9 @@ const pkgdef :Spk.PackageDefinition = (
     # This manifest is included in your app package to tell Sandstorm
     # about your app.
 
-    appVersion = 3,  # Increment this for every release.
+    appVersion = 4,  # Increment this for every release.
+
+    appMarketingVersion = (defaultText = "0.0.1"),
 
     actions = [
       # Define your "new document" handlers here.
@@ -63,6 +65,7 @@ const pkgdef :Spk.PackageDefinition = (
   # Use this to force-include stuff that you know you need but which may
   # not have been detected as a dependency during `spk dev`. If you list
   # a directory here, its entire contents will be included recursively.
+
 );
 
 const myCommand :Spk.Manifest.Command = (
