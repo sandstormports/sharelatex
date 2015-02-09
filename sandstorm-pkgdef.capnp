@@ -59,12 +59,14 @@ const pkgdef :Spk.PackageDefinition = (
   # `spk dev` will write a list of all the files your app uses to this file.
   # You should review it later, before shipping your app.
 
-  alwaysInclude = ["usr/share/texmf-dist"]
-  # Fill this list with more names of files or directories that should be
-  # included in your package, even if not listed in sandstorm-files.list.
-  # Use this to force-include stuff that you know you need but which may
-  # not have been detected as a dependency during `spk dev`. If you list
-  # a directory here, its entire contents will be included recursively.
+  alwaysInclude = ["usr/share/texmf-dist",
+                   "document-updater/node_modules",
+                   "docstore/node_modules",
+                   "filestore/node_modules",
+                   "web/node_modules",
+                   "track-changes/node_modules",
+                   "clsi/node_modules",
+                   "real-time/node_modules"]
 
 );
 
