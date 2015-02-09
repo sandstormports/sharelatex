@@ -11,6 +11,8 @@ mkdir -p /var/user_files
 mkdir -p /var/log/mongodb
 mkdir -p /var/lib/mongodb
 
+export NODE_ENV=production
+
 mongod --bind_ip=127.0.0.1 --dbpath=/var/lib/mongodb --logpath=/var/log/mongodb/mongod.log --logappend --fork
 
 echo "started mongo"
