@@ -36,6 +36,11 @@ SERVICES = [{
 	repo: "https://github.com/dwrensha/docstore-sharelatex.git"
 	branch: "sandstorm-app"
 	launch: false
+}, {
+	name: "real-time"
+	repo: "https://github.com/dwrensha/real-time-sharelatex.git"
+	branch: "sandstorm-app"
+	launch: false
 }]
 
 module.exports = (grunt) ->
