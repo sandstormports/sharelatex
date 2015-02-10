@@ -50,14 +50,12 @@ const pkgdef :Spk.PackageDefinition = (
                       "etc/host.conf", "etc/localtime", "etc/nsswitch.conf",
                       "etc/resolv.conf"
                       ]
-      )
+      ),
+      ( sourcePath = "/var/lib/texmf", packagePath="usr/local/lib/texmf")
     ]
-    
   ),
 
   fileList = "sandstorm-files.list",
-  # `spk dev` will write a list of all the files your app uses to this file.
-  # You should review it later, before shipping your app.
 
   alwaysInclude = ["usr/share/texmf-dist",
                    "document-updater/node_modules/redis-sharelatex/node_modules/coffee-script",
