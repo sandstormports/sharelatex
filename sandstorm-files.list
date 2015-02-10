@@ -1928,10 +1928,12 @@ track-changes/node_modules/settings-sharelatex/node_modules/coffee-script/lib/co
 track-changes/node_modules/settings-sharelatex/node_modules/coffee-script/lib/coffee-script/sourcemap.js
 track-changes/node_modules/settings-sharelatex/node_modules/coffee-script/package.json
 track-changes/node_modules/settings-sharelatex/package.json
+usr/bin/base64
 usr/bin/bash
 usr/bin/bibtex
 usr/bin/env
 usr/bin/find
+usr/bin/head
 usr/bin/kpsewhich
 usr/bin/latex
 usr/bin/latexmk
