@@ -60,13 +60,10 @@ const pkgdef :Spk.PackageDefinition = (
   # You should review it later, before shipping your app.
 
   alwaysInclude = ["usr/share/texmf-dist",
-                   "document-updater/node_modules",
-                   "docstore/node_modules",
-                   "filestore/node_modules",
-                   "web/node_modules",
-                   "track-changes/node_modules",
-                   "clsi/node_modules",
-                   "real-time/node_modules"]
+                   "document-updater/node_modules/redis-sharelatex/node_modules/coffee-script",
+                   "web/node_modules/redis-sharelatex/node_modules/coffee-script",
+                   "track-changes/node_modules/redis-sharelatex/node_modules/coffee-script",
+                   "real-time/node_modules/redis-sharelatex/node_modules/coffee-script"]
 
 );
 
