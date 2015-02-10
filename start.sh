@@ -1,5 +1,3 @@
-#! /bin/bash
-
 mkdir -p /var/lib/texmf
 mkdir -p /var/redis
 mkdir -p /var/uploads

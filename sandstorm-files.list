@@ -1643,7 +1643,7 @@ real-time/node_modules/socket.io/package.json
 sandstorm-http-bridge
 sandstorm-http-bridge-config
 sandstorm-manifest
-start.bash
+start.sh
 track-changes/app.js
 track-changes/app/js/DiffGenerator.js
 track-changes/app/js/DiffManager.js
@@ -1929,8 +1929,8 @@ track-changes/node_modules/settings-sharelatex/node_modules/coffee-script/lib/co
 track-changes/node_modules/settings-sharelatex/node_modules/coffee-script/package.json
 track-changes/node_modules/settings-sharelatex/package.json
 usr/bin/base64
-usr/bin/bash
 usr/bin/bibtex
+usr/bin/busybox
 usr/bin/env
 usr/bin/find
 usr/bin/head
@@ -2046,8 +2046,6 @@ usr/lib/libpoppler.so.49
 usr/lib/libpoppler.so.49.0.0
 usr/lib/libpthread-2.21.so
 usr/lib/libpthread.so.0
-usr/lib/libreadline.so.6
-usr/lib/libreadline.so.6.3
 usr/lib/libresolv-2.21.so
 usr/lib/libresolv.so.2
 usr/lib/librt-2.21.so

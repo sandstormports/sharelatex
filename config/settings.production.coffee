@@ -14,7 +14,6 @@ httpAuthUsers = {}
 httpAuthUsers[httpAuthUser] = httpAuthPass
 
 sessionSecret = process.env.SESSION_SECRET
-console.log(sessionSecret)
 
 module.exports =
 	# File storage
