@@ -17,7 +17,7 @@ const pkgdef :Spk.PackageDefinition = (
     # This manifest is included in your app package to tell Sandstorm
     # about your app.
 
-    appVersion = 5,  # Increment this for every release.
+    appVersion = 6,  # Increment this for every release.
 
     appMarketingVersion = (defaultText = "0.1.2"),
 
@@ -71,6 +71,7 @@ const myCommand :Spk.Manifest.Command = (
   environ = [
     # Note that this defines the *entire* environment seen by your app.
     (key = "PATH", value = "/usr/local/bin:/usr/bin:/bin"),
-    (key = "USER", value="sandstorm-user")
+    (key = "USER", value="sharelatex"),
+    (key = "HOME", value="/var")
   ]
 );
