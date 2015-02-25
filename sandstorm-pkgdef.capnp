@@ -44,6 +44,7 @@ const pkgdef :Spk.PackageDefinition = (
     # here are only to tell it where to find files that the app wants.
     searchPath = [
       ( sourcePath = "." ),  # Search this directory first.
+      ( sourcePath = "/home/david/.nvm/v0.10.36/bin/node", packagePath = "usr/bin/node"),
       ( sourcePath="/usr/bin/niscud",  packagePath="usr/bin/mongod"),
       ( sourcePath = "/",    # Then search the system root directory.
         hidePaths = [ "home", "proc", "sys",
