@@ -17,7 +17,9 @@ const pkgdef :Spk.PackageDefinition = (
     # This manifest is included in your app package to tell Sandstorm
     # about your app.
 
-    appVersion = 6,  # Increment this for every release.
+    appTitle = (defaultText = "ShareLaTeX"),
+
+    appVersion = 7,  # Increment this for every release.
 
     appMarketingVersion = (defaultText = "0.1.2"),
 
