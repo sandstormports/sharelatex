@@ -7,12 +7,16 @@ clsi
 filestore
 track-changes
 docstore
+tags
+chat
+spelling
+real-time
+migrations/*.js
 
-compiles
-cache
-user_files
-template_files
+data
+tmp
 
 db.sqlite
 
+.DS_Store
 .vagrant
