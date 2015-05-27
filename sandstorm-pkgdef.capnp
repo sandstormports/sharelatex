@@ -19,9 +19,9 @@ const pkgdef :Spk.PackageDefinition = (
 
     appTitle = (defaultText = "ShareLaTeX"),
 
-    appVersion = 7,  # Increment this for every release.
+    appVersion = 8,  # Increment this for every release.
 
-    appMarketingVersion = (defaultText = "0.1.2"),
+    appMarketingVersion = (defaultText = "0.1.4"),
 
     actions = [
       # Define your "new document" handlers here.
@@ -64,7 +64,23 @@ const pkgdef :Spk.PackageDefinition = (
                    "document-updater/node_modules/redis-sharelatex/node_modules/coffee-script",
                    "web/node_modules/redis-sharelatex/node_modules/coffee-script",
                    "track-changes/node_modules/redis-sharelatex/node_modules/coffee-script",
-                   "real-time/node_modules/redis-sharelatex/node_modules/coffee-script"]
+                   "real-time/node_modules/redis-sharelatex/node_modules/coffee-script"],
+
+  bridgeConfig = (
+    viewInfo = (
+       permissions = [(name = "read", title = (defaultText = "read"),
+                       description = (defaultText = "allows viewing")),
+                      (name = "write", title = (defaultText = "write"),
+                       description = (defaultText = "allows editing"))],
+       roles = [(title = (defaultText = "collaborator"),
+                 permissions = [true, true],
+                 verbPhrase = (defaultText = "can read and write"),
+                 default = true),
+                (title = (defaultText = "reader"),
+                 permissions = [true, false],
+                 verbPhrase = (defaultText = "can read"))]
+    )
+  )
 
 );
 
