@@ -60,7 +60,8 @@ const pkgdef :Spk.PackageDefinition = (
 
   fileList = "sandstorm-files.list",
 
-  alwaysInclude = ["usr/share/texmf-dist",
+  alwaysInclude = ["web/public",
+                   "usr/share/texmf-dist",
                    "document-updater/node_modules/redis-sharelatex/node_modules/coffee-script",
                    "web/node_modules/redis-sharelatex/node_modules/coffee-script",
                    "track-changes/node_modules/redis-sharelatex/node_modules/coffee-script",
