@@ -20,8 +20,29 @@ const pkgdef :Spk.PackageDefinition = (
     appTitle = (defaultText = "ShareLaTeX"),
 
     appVersion = 8,  # Increment this for every release.
-
     appMarketingVersion = (defaultText = "0.1.4"),
+
+    metadata = (
+      icons = (
+        appGrid = (png = (dpi1x = embed "app-graphics/sharelatex-128.png")),
+        grain = (png = (dpi1x = embed "app-graphics/sharelatex-24.png",
+                        dpi2x = embed "app-graphics/sharelatex-48.png")),
+        market = (png = (dpi1x = embed "app-graphics/sharelatex-150.png"))
+      ),
+      website = "https://www.sharelatex.com",
+      codeUrl = "https://github.com/dwrensha/sharelatex",
+      license = (openSource = agpl3),
+      categories = [office, science],
+      author = (
+       upstreamAuthor = "ShareLaTeX Team",
+       contactEmail = "david@sandstorm.io",
+       pgpSignature = embed "pgp-signature",
+      ),
+      pgpKeyring = embed "pgp-keyring",
+      description = (defaultText = embed "description.md"),
+      screenshots = [(width = 448, height = 294, png = embed "sandstorm-screenshot.png")],
+      changeLog = (defaultText = embed "changeLog.md"),
+    ),
 
     actions = [
       # Define your "new document" handlers here.
