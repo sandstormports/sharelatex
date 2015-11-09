@@ -40,6 +40,7 @@ const pkgdef :Spk.PackageDefinition = (
       ),
       pgpKeyring = embed "pgp-keyring",
       description = (defaultText = embed "description.md"),
+      shortDescription = (defaultText = "LaTeX editor"),
       screenshots = [(width = 448, height = 294, png = embed "sandstorm-screenshot.png")],
       changeLog = (defaultText = embed "changeLog.md"),
     ),
@@ -47,9 +48,8 @@ const pkgdef :Spk.PackageDefinition = (
     actions = [
       # Define your "new document" handlers here.
       ( title = (defaultText = "New ShareLaTeX Project"),
-        command = .myCommand
-        # The command to run when starting for the first time. (".myCommand"
-        # is just a constant defined at the bottom of the file.)
+        command = .myCommand,
+        nounPhrase = (defaultText = "document"),
       )
     ],
 
