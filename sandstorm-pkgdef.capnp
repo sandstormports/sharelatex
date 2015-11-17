@@ -19,8 +19,8 @@ const pkgdef :Spk.PackageDefinition = (
 
     appTitle = (defaultText = "ShareLaTeX"),
 
-    appVersion = 9,  # Increment this for every release.
-    appMarketingVersion = (defaultText = "2015.08.19 (0.1.4+)"),
+    appVersion = 10,  # Increment this for every release.
+    appMarketingVersion = (defaultText = "2015.11.16 (0.1.4+)"),
 
     metadata = (
       icons = (
@@ -67,7 +67,7 @@ const pkgdef :Spk.PackageDefinition = (
     # here are only to tell it where to find files that the app wants.
     searchPath = [
       ( sourcePath = "." ),  # Search this directory first.
-      ( sourcePath = "/home/david/.nvm/v0.10.36/bin/node", packagePath = "usr/bin/node"),
+      ( sourcePath = "/home/david/.nvm/v0.10.40/bin/node", packagePath = "usr/bin/node"),
       ( sourcePath="/usr/bin/niscud",  packagePath="usr/bin/mongod"),
       ( sourcePath = "/",    # Then search the system root directory.
         hidePaths = [ "home", "proc", "sys",
